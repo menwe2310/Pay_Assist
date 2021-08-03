@@ -22,13 +22,24 @@ public class Main {
         Double price = scanner.nextDouble();
         TimeUnit.SECONDS.sleep(2);
 
-        System.out.println("Dear " + name + "," );
-        System.out.println("Thank you for paying for the following item: ");
-        System.out.println("Item: " + item);
-        System.out.println("Price: " + price);
-        TimeUnit.SECONDS.sleep(2);
+        if (price >= 1000) {
+            System.out.println("Dear " + name + ",");
+            System.out.println("Thank you for paying for the following item: ");
+            System.out.println("Item: " + item);
+            System.out.println("Price: " + price);
+            TimeUnit.SECONDS.sleep(2);
 
-        System.out.println("Thank you for using PayAssist.");
+            System.out.println("Thank you for using PayAssist.");
+        }
+        else {
+            System.out.println("1000 is the minimum amount. Please try again");
+        }
+
+
+
+
+
+
 
 
 
